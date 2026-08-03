@@ -9,7 +9,7 @@ const INSTA_POSTS = [
     comments: "28",
     type: "Reel",
     caption: "Crocheting dusty rose petals stem by stem 🌹 Watch until the end to see the final bouquet reveal! #Crovellaa #HandmadeCrochet #ForeverFlowers",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/reel/DbaMqyxIwKJ/"
   },
   {
     id: 2,
@@ -18,43 +18,43 @@ const INSTA_POSTS = [
     comments: "45",
     type: "Post",
     caption: "Desktop sunshine that never needs watering 🌻 Mini crochet sunflowers now restocked! Link in bio to order yours ✨ #crochetdens #crochetsunflower",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/p/DbS7s-kCJpL/"
   },
   {
     id: 3,
     image: "/assets/plushie_bear.png",
     likes: "689",
     comments: "52",
-    type: "Reel",
+    type: "Post",
     caption: "Meet Barnaby the Cream Bear! 🧸 Stuffed with love and safety eyes. Perfect anniversary surprise! #amigurumi #crochetbear #handmadegifts",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/p/DbNTfsSiC0T/"
   },
   {
     id: 4,
     image: "/assets/tote_bag.png",
     likes: "298",
     comments: "19",
-    type: "Post",
+    type: "Reel",
     caption: "Aesthetic granny square floral tote bag 👜 Handmade using 100% thick cotton thread. #crochettote #bohostyle #artisangifts",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/reel/DapIx59ovrR/"
   },
   {
     id: 5,
     image: "/assets/keychain_tulip.png",
     likes: "421",
     comments: "33",
-    type: "Post",
+    type: "Reel",
     caption: "Pastel tulip trio keychains for bestie gifts 🌷 Which color is your favorite? Pink, Lavender, or Mint? #crochettulip #keychainlove",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/reel/DaNDJQiId8E/"
   },
   {
     id: 6,
     image: "/assets/gift_unboxing.png",
     likes: "892",
     comments: "74",
-    type: "Reel",
+    type: "Post",
     caption: "Unboxing order #ORD-9281 for Ananya! Kraft gift box + dusty rose tissue paper + handwritten love note 💌 #unboxingasmr #crovellaa",
-    url: "https://www.instagram.com/crovellaa_/"
+    url: "https://www.instagram.com/crovellaa_/p/DaIZGAHILto/"
   }
 ];
 
