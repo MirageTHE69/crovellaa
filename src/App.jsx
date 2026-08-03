@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ShopProvider, useShop } from './context/ShopContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,12 +8,10 @@ import ProductModal from './components/ProductModal';
 import CartDrawer from './components/CartDrawer';
 import CheckoutModal from './components/CheckoutModal';
 import CustomOrderModal from './components/CustomOrderModal';
-import AdminPage from './components/AdminPage';
 import InstagramFeed from './components/InstagramFeed';
 import ReviewsSection from './components/ReviewsSection';
 import Footer from './components/Footer';
 import { CATEGORIES } from './data/products';
-import { Lock, ShieldCheck } from 'lucide-react';
 
 function Catalog() {
   const { products, selectedCategory, setSelectedCategory } = useShop();
@@ -76,35 +74,9 @@ function Catalog() {
 }
 
 function MainApp() {
-  const [view, setView] = useState('store'); // 'store' | 'admin'
-
-  // Hash route listener (#admin -> opens Admin Login Page)
-  useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash === '#admin' || window.location.pathname.includes('/admin')) {
-        setView('admin');
-      }
-    };
-    
-    handleHashChange();
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  if (view === 'admin') {
-    return (
-      <AdminPage
-        onReturnToStore={() => {
-          window.location.hash = '';
-          setView('store');
-        }}
-      />
-    );
-  }
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FAFAF8] text-[#2C2C2C]">
-      <Navbar onOpenAdmin={() => { window.location.hash = '#admin'; setView('admin'); }} />
+      <Navbar />
       <main className="flex-1">
         <Hero />
         <CustomBouquetBuilder />
@@ -113,19 +85,7 @@ function MainApp() {
         <ReviewsSection />
       </main>
       
-      {/* Footer with Merchant Direct Login Portal Link */}
       <Footer />
-      
-      {/* Bottom Merchant Portal Strip */}
-      <div className="bg-[#1A1A1A] text-gray-400 py-2.5 px-4 text-center text-xs border-t border-gray-800 flex items-center justify-center gap-2">
-        <span>Crovellaa Artisan Studio Portal • </span>
-        <button
-          onClick={() => { window.location.hash = '#admin'; setView('admin'); }}
-          className="text-[#6A9A85] hover:text-[#C08E88] font-bold underline flex items-center gap-1"
-        >
-          <Lock size={12} /> Merchant Admin Login (#admin)
-        </button>
-      </div>
 
       {/* Storefront Modals */}
       <ProductModal />

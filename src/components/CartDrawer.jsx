@@ -245,7 +245,7 @@ export default function CartDrawer() {
                 }}
                 className="w-full btn btn-primary py-3.5 text-sm flex items-center justify-center gap-2 shadow-lg"
               >
-                <span>Proceed to Checkout</span>
+                <span>Place Order Request (Payment on Call)</span>
                 <ArrowRight size={16} />
               </button>
 

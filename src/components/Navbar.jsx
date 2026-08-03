@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useShop } from '../context/ShopContext';
 import { ShoppingBag, Heart, Search, Menu, X, Sparkles, SlidersHorizontal, Camera, ShieldCheck } from 'lucide-react';
 
-export default function Navbar({ onOpenAdmin }) {
+export default function Navbar() {
   const {
     cart,
     wishlist,
@@ -194,15 +194,16 @@ export default function Navbar({ onOpenAdmin }) {
             <Camera size={19} />
           </a>
 
-          {/* Explicit Merchant Admin Studio Button */}
-          <button
-            onClick={onOpenAdmin}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#6A9A85]/10 text-[#6A9A85] hover:bg-[#6A9A85] hover:text-white transition-all text-xs font-bold font-heading uppercase tracking-wider border border-[#6A9A85]/30 ml-1"
-            title="Open Store Admin Dashboard"
+          {/* Instagram Button */}
+          <a
+            href="https://www.instagram.com/crovellaa_/"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 text-gray-400 hover:text-[#C08E88] transition-colors hidden sm:block"
+            title="@crovellaa_ Instagram"
           >
-            <SlidersHorizontal size={14} />
-            <span>Admin Portal</span>
-          </button>
+            <Camera size={19} />
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -252,16 +253,6 @@ export default function Navbar({ onOpenAdmin }) {
           </button>
 
           <hr className="border-[#EAE4DD]" />
-
-          <button
-            onClick={() => {
-              onOpenAdmin();
-              setMobileMenuOpen(false);
-            }}
-            className="flex items-center gap-2 py-2 font-heading text-xs uppercase font-bold text-[#6A9A85]"
-          >
-            <SlidersHorizontal size={16} /> Open Merchant Admin Portal
-          </button>
 
           <a
             href="https://www.instagram.com/crovellaa_/"
