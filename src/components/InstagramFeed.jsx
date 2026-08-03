@@ -91,9 +91,9 @@ export default function InstagramFeed() {
               <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-tr from-amber-400 via-rose-500 to-purple-600 shadow-md">
                 <div className="w-full h-full rounded-full bg-white p-0.5">
                   <img
-                    src="/assets/hero_bouquet.png"
+                    src="/assets/logo.png"
                     alt="@crovellaa_"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover rounded-full bg-[#FAF5EC]"
                   />
                 </div>
               </div>

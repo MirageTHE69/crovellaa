@@ -23,10 +23,17 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="md:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#C08E88] flex items-center justify-center text-white font-bold text-xl">
-                🌸
+              <div className="w-12 h-12 rounded-2xl overflow-hidden bg-[#FAF5EC] p-0.5 border border-gray-700 shadow-sm shrink-0">
+                <img
+                  src="/assets/logo.png"
+                  alt="Crovellaa Crochet Creation"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
-              <span className="font-heading text-2xl font-bold tracking-wider">Crovellaa</span>
+              <div className="flex flex-col">
+                <span className="font-heading text-2xl font-bold tracking-wider text-white">Crovellaa</span>
+                <span className="text-[10px] text-[#C08E88] font-bold tracking-widest uppercase">Crochet Creation</span>
+              </div>
             </div>
 
             <p className="text-xs text-gray-300 leading-relaxed">

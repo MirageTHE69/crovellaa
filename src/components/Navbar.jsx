@@ -39,20 +39,24 @@ export default function Navbar({ onOpenAdmin }) {
       {/* Main Spacious Navbar Container (Taller Height) */}
       <div className="container py-5 flex items-center justify-between">
         
-        {/* Left: Taller Luxury Logo */}
+        {/* Left: Taller Luxury Brand Logo */}
         <div
           onClick={() => { setSelectedCategory('all'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 rounded-full bg-[#C08E88]/15 border border-[#C08E88]/30 flex items-center justify-center text-lg font-bold transition-transform group-hover:scale-110 shadow-xs">
-            🌸
+          <div className="h-12 w-12 overflow-hidden rounded-2xl border border-[#EAE4DD] shadow-xs group-hover:shadow-md group-hover:scale-105 transition-all bg-[#FAF5EC] p-0.5 flex items-center justify-center shrink-0">
+            <img
+              src="/assets/logo.png"
+              alt="Crovellaa Crochet Creation"
+              className="w-full h-full object-cover rounded-xl"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-heading text-2xl tracking-widest font-bold text-[#2C2C2C] uppercase leading-tight">
               Crovellaa
             </span>
-            <span className="text-[10px] text-[#6A9A85] font-semibold tracking-widest uppercase">
-              Handcrafted Studio
+            <span className="text-[10px] text-[#C08E88] font-bold tracking-widest uppercase">
+              Crochet Creation
             </span>
           </div>
         </div>
